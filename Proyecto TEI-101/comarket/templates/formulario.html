@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+<body class = "light-green lighten-5">
+    <br>
+    <br>
+    <br>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, options);
+      });
+    </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materliaze/1.0.0-rc.2/js/materialize.min.js"> </script>
+    <div class = "section container">
+        <div class = "row">
+            <form class = "col s12">
+                <div class = "row card-panel">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="nombre" class="autocomplete">
+                        <label for="nombre">Ingrese sus nombres</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="apellido" class="autocomplete">
+                        <label for="apellido">Ingrese sus apellidos</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">contact_mail</i>
+                        <input type="text" id="mail" class="autocomplete">
+                        <label for="mail">Ingrese su Mail</label>
+                    </div>   
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">contact_phone</i>
+                        <input type="text" id="numero" class="autocomplete">
+                        <label for="numero">Ingrese su Numero telefónico</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" onclick="window.open('{% url 'enviado' %}','_blank')">Enviar
+                            <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>    
+    </div>
+</body>
+{% endblock %}
+

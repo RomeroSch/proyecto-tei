@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<head>
+    <br>
+    <br>
+    <br>
+<div class="container">
+    <div class="row center">
+        <div class="col s12">
+            <div class="card teal lighten-5">
+                <div class="card-content black-text">
+                  <span class="card-title">¿Quiénes Somos?</span>
+                  <p>Somos un equipo de estudiantes de Ingeniería que se propuso crear energía sustentable y reducir el impacto que tienen nuestros residuos en el planeta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/fondo.jpg' %}" alt="Imagen">   
+                </div>
+                <div class="card-content">
+                  <p class='row center'>Francisco Pizarro</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.instagram.com/sisco___12/" target="_blank" >Instagram</a>
+                </div>
+              </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'img/fondo.jpg' %}" alt="Imagen">
+                </div>
+                <div class="card-content">
+                  <p class='row center'>Clemente Mozó</p>
+                </div>
+                <div class="card-action">
+                  <a  href="https://www.instagram.com/clementemozor/" target="_blank">Instagram</a>
+                </div>
+              </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/fondo.jpg' %}" alt="Imagen">
+                </div>
+                <div class="card-content">
+                  <p class='row center'>Joaquín Pinilla</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.instagram.com/joapinillah/" target="_blank" >Instagram</a>
+                </div>
+              </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'img/fondo.jpg' %}" alt="Imagen">
+                </div>
+                <div class="card-content">
+                  <p class='row center'>Alejandro Romero</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.instagram.com/ale_rs1/" target="_blank" >Instagram</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A lo que tu llamas desechos, nosotros le llamamos oportunidades</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'img/campo.jpg' %}" alt="Unsplashed background img 2" style="opacity: 1;"></div>
+  </div>
+</head>
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red boton-grande" onclick="window.open('{% url 'formulario' %}','_blank')">
+    <p>¡Inscribete!</p>
+  </a>
+</div>
+{% endblock %}

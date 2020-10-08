@@ -1,0 +1,138 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+
+<br>
+<br>
+<script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+</script>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center teal-text white-text">Desafío ODS</h1>
+          <br>
+          <br>
+    
+        </div>
+      </div>
+  <div class="parallax">
+    <img src="{% static 'img/odsods.jpg' %}" alt="Imagen" 
+    style="transform: translate3d(-50%, 202.63px, 0px); opacity: 1;">
+  </div>
+</div>
+<div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Objetivo 12: Producción y consumo responsable</h4>
+          <p class="center  -align light">Para lograr crecimiento económico y desarrollo sostenible, es urgente reducir la huella ecológica mediante un cambio en los métodos de producción y consumo de bienes y recursos. La agricultura es el principal consumidor de agua en el mundo y el riego representa hoy casi el 70% de toda el agua dulce disponible para el consumo humano.
+            La gestión eficiente de los recursos naturales compartidos y la forma en que se eliminan los desechos tóxicos y los contaminantes son vitales para lograr este objetivo. También es importante instar a las industrias, los negocios y los consumidores a reciclar y reducir los desechos, como asimismo apoyar a los países en desarrollo a avanzar hacia patrones sostenibles de consumo para 2030.
+            El consumo de una gran proporción de la población mundial sigue siendo insuficiente para satisfacer incluso sus necesidades básicas. En este contexto, es importante reducir a la mitad el desperdicio per cápita de alimentos en el mundo a nivel de comercio minorista y consumidores para crear cadenas de producción y suministro más eficientes. Esto puede aportar a la seguridad alimentaria y llevarnos hacia una economía que utilice los recursos de manera más eficiente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">1.300 millones</h5>
+  
+            <p class=" center light">Cada año se desperdician 1.300 millones de toneladas de alimentos, mientras casi 2.000 millones de personas padecen hambre o desnutrición.</p>
+          </div>
+        </div>
+  
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">22%</h5>
+  
+            <p class=" center light">El sector alimentario representa alrededor del 22% de las emisiones totales de gases de efecto invernadero, en gran medida debido a la conversión de bosques en tierras de cultivo.
+
+            </p>
+          </div>
+        </div>
+  
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">2.000 millones</h5>
+  
+            <p class="center light">A nivel mundial, 2 mil millones de personas tienen sobrepeso u obesidad.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">3%</h5>
+  
+            <p class=" center light">Solo el 3% del agua del mundo es potable y los humanos la consumen más rápido de lo que la naturaleza demora en reponerla.</p>
+          </div>
+        </div>
+  
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">US$ 120.000 millones</h5>
+  
+            <p class=" center light">Si todas las personas utilizaran bombillas de bajo consumo, el mundo ahorraría US$ 120 mil millones anuales.
+
+            </p>
+          </div>
+        </div>
+  
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5 class="center">20%</h5>
+  
+            <p class="center light">Una quinta parte del consumo global de energía en 2013 provino de fuentes renovables.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <div id="index-banner" class="parallax-container">
+  <div class="parallax">
+    <img src="{% static 'img/odsods.jpg' %}" alt="Imagen" 
+    style="transform: translate3d(-50%, 202.63px, 0px); opacity: 1;">
+  </div>
+</div>
+
+<footer class="page-footer teal" style = "background-color:rgb(31, 99, 76);">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Grupo BioEnergy</h5>
+          <p class="grey-text text-lighten-4">Somos un equipo de estudiantes de Ingeniería que se propuso crear energía limpia a partir de basura orgánica.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright © 2020 BioEnergy Chile Ltda.
+      </div>
+    </div>
+  </footer>
+            
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red boton-grande" onclick="window.open('{% url 'formulario' %}','_blank')">
+      <p>¡Inscribete!</p>
+    </a>
+  </div>
+
+
+
+
+{% endblock %}

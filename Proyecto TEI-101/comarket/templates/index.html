@@ -1,0 +1,118 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+    $('.parallax').parallax('responsiveThreshold');
+  });
+</script>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">¿Sabías que el 50% de nuestros desechos se pueden reciclar?</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">¡Conoce nuestro trabajo!</h5>
+      </div>
+      <br>
+      <br>
+
+    </div>
+  </div>
+  <div class="parallax">
+    <img src="{% static 'img/campo.jpg' %}" alt="Imagen" 
+    style="transform: translate3d(-50%, 202.63px, 0px); opacity: 1;">
+  </div>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+          <h5 class="center">Energía orgánica</h5>
+
+          <p class="light">Generamos energía limpia y renovable en base a la fermentación de residuos orgánicos, contribuyendo así no solamente al cuidado del medioambiente sino también a muchas familias que no poseen acceso a energía electrica, ni calórica. Nuestro principal producto es el biogas, este gas, adecuadamente depurado, se puede utilizar para producir energía eléctrica mediante turbinas o plantas generadoras a gas, y también para producir calor en hornos, estufas, secadores, calderas, calefacción u otros sistemas debidamente adaptados.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+          <h5 class="center">Trabajo colaborativo</h5>
+
+          <p class="light">El reciclaje es tarea de todos. Nuestros clientes son los iniciadores de un proceso complejo que es la producción de energía. A ellos se les solicita la fácil tarea de separar los residuos orgánicos del resto, y agendar un retiro de desechos según nuestra disponibilidad. Posterior a esto, nuestro equipo se encarga de trasladar los residuos a la planta y entregar energía a la red local como resultado.  </p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+          <h5 class="center">Biodigestores</h5>
+
+          <p class="light">Un biodigestor es un contenedor hermético que permite la descomposición de la materia orgánica en condiciones anaeróbicas y facilita la extracción del gas resultante para su uso como energía. Este cuenta con una entrada para el material orgánico, un espacio para su descomposición, una salida con válvula de control para el gas (biogás), y una salida para el material ya procesado (bioabono).</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Tu basura es nuestro combustible</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{% static 'img/atardecer.jpg' %}" alt="Unsplashed background img 2" style="opacity: 1;"></div>
+</div>
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Contáctanos</h4>
+        <p class="center  -align light">Si vives en la V región y estás interesado en nuestro servicio, ¡contáctanos ahora apretando el botón rojo de la esquina!</p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Las cosas pequeñas suelen tener pequeños comienzos</h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{% static 'img/atardecer.jpg' %}" alt="Unsplashed background img 3" style="opacity: 1;"></div>
+</div>
+  <footer class="page-footer teal" >
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Grupo BioEnergy</h5>
+          <p class="grey-text text-lighten-4">Somos un equipo de estudiantes de Ingeniería que se propuso crear energía limpia a partir de basura orgánica.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright © 2020 BioEnergy Chile Ltda.
+      </div>
+    </div>
+  </footer>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red boton-grande" onclick="window.open('{% url 'formulario' %}','_blank')">
+      <p>¡Inscribete!</p>
+    </a>
+  </div>
+
+{% endblock %}

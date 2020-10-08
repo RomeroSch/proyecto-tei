@@ -1,0 +1,78 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<head>
+  <br>
+  <br>
+<script>
+    $(document).ready(function(){
+    $('.slider').slider();
+    $('.slider').slider('duration', 250);
+  });
+</script>
+
+<div class="slider fullscreen">
+  <ul class="slides">
+    <li>
+      <img src="{% static 'img/desechos1.jpg' %}"> 
+      <div class="caption center-align">
+        <h1>Recolección de desechos</h1>
+        <h3 class="light grey-text text-lighten-3">Separa tu basura, agenda tu retiro y un receptor recogera tus desechos a la brevedad.</h3>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'img/traslado.jpeg' %}"> 
+      <div class="caption left-align">
+        <h1>Traslado a Planta</h1>
+        <h3 class="light grey-text text-lighten-3">Tus desechos se trasladan hasta la planta donde serán convertidos en abono y gas .</h3>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'img/industria.jpeg' %}"> 
+      <div class="caption right-align">
+        <h1>Proceso Industrial</h1>
+        <h3 class="light grey-text text-lighten-3">Una vez depositados los desechos, estos son trasladados a cámaras de alta temperatura donde microorganismos los descomponen, es en este proceso donde se libera gas metano que luego es filtrado y almacenado para su distribución.</h3>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'img/energia.jpeg' %}"> 
+      <div class="caption center-align">
+        <h1>Energía para la comunidad</h1>
+        <h3 class="light grey-text text-lighten-3">Con el apoyo de fondos estatales la energía producida será suministrada a la red local.</h3>
+        
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'img/vacas.jpg' %}"> 
+      <div class="caption center-align">
+        <h1>Proyecciones</h1>
+        <h3 class="light grey-text text-lighten-3">Esperamos poder trabajar con empresas ganaderas para reducir las emisiones de metano que dañan el planeta.</h3>
+      </div>
+    </li>
+  </ul>
+</div>
+</head>
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red boton-grande" onclick="window.open('{% url 'formulario' %}','_blank')">
+    <p>¡Inscribete!</p>
+  </a>
+</div>
+
+<footer class="page-footer teal" >
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Grupo BioEnergy</h5>
+        <p class="grey-text text-lighten-4"></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright © 2020 BioEnergy Chile Ltda.
+    </div>
+  </div>
+</footer>
+  {% endblock %}
+

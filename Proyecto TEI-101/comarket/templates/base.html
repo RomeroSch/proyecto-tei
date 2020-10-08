@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='es' style = 'height: 100%;'>
+
+<head>
+    <title>BioEnergy</title>    
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel ="stylesheet">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" >
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}" >
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+</head>
+<body class = " light-green lighten-5">
+    <nav  style="position: fixed; z-index: 999; background-color: rgb(31, 99, 76);">
+      <div class="nav-wrapper">
+        <a href="{% url 'index' %}" class="brand-logo center">BioEnergy</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="{% url 'index' %}">Inicio</a></li>
+          <li><a href="{% url 'servicio' %}">Servicio</a></li>
+          <li><a href="{% url 'ods' %}">Desafio ODS</a></li>
+          <li><a href="{% url 'nosotros' %}">Quiénes Somos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false
+      });
+    });</script>
+    {%block content %}
+    {% endblock %}
+</body>
